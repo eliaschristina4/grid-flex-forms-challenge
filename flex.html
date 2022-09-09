@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flex.css">
+    <title>Form | Flexbox</title>
+</head>
+<body>
+
+    <h1>This is my flexbox form.</h1>
+    <p>Here is a <a href="grid.html">link</a> to my grid form.</p>
+
+    <form action="/">
+
+        <div class="container" id="row-1">
+            <label for="fname">First name:</label>
+            <input type="text" name="fname" id="fname" placeholder="John" required>
+
+            <label for="lname">Last name:</label>
+            <input type="text" name="lname" id="lname" placeholder="Doe" required>
+            </div>  
+
+        <div class="container" id="row-2">    
+            <label for="phone">Phone number:</label>
+            <input type="tel" name="phone" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+            <label for="email">Email address:</label>
+            <input type="email" name="email" id="email" placeholder="johndoe@website.com" required>
+            </div>  
+
+        <div class="container" id="row-3"></div>    
+            <label for="favorite">Choose your favorite ice cream flavor from the choices below.</label>
+            <br>
+            <input type="radio" name="favorite" value="Vanilla">Vanilla
+            <input type="radio" name="favorite" value="Chocolate">Chocolate
+            <input type="radio" name="favorite" value="Strawberry">Strawberry
+            <input type="radio" name="favorite" value="Other">Other
+            </div>    
+        
+        <div class="container" id="row-4"></div>
+            <label for="restaurant">Tell me about your favorite restaurant in Charlotte and what you order.</label>
+            <br>
+            <textarea name="restaurant" id="restaurant" cols="60" rows="10" placeholder="Write your response here." required></textarea>
+            </div>
+
+    </form>
+    
+</body>
+</html>
